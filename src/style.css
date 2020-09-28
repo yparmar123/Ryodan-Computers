@@ -1,0 +1,246 @@
+/**  
+  Name: Yuvraj Parmar
+  ID: 121391171
+  Class: Web222
+  Reason: Final project/assessment
+  Date: April 16, 2020
+  Professor: David Humphrey
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Libre+Baskerville&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    color: #655c56;
+    background-color: #94d3ac;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html, body {
+    height: 100%;
+    max-height: 100%;
+
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4em;
+    max-height: 60px;
+    font-weight: bolder;
+}
+
+
+h1, h2, h2 {
+    font-family: 'Girassol', cursive;
+}
+
+span, p, label, a {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.item img {
+    width: 100%;
+}
+
+body {
+    background-color: #ccedd2;
+    color: #655c56;   
+}
+
+main {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+.motto p {
+    
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+.motto h2 {
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: repeat(auto-fit, 20%);
+    flex : 9;
+}
+
+.wrapper h2 {
+    text-align: center;
+    grid-column: 1 / 6;
+}
+
+#navBar {
+    flex: 1;
+}
+
+.menuItem {
+    cursor: pointer;
+    padding: 15px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid 1px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;  
+}
+
+.description {
+    max-width: 175;
+}
+
+footer form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 400px;
+    min-width: 100px;
+    grid-gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+#form form {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    max-width: 800px;
+    min-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding: 2em;
+    border: 1px solid white;
+}
+
+#form form textarea {
+    grid-column: 1/3;
+}
+
+input {
+    border-radius: 0.25em;
+}
+
+#form input textarea {
+    width: 100%;
+    padding: 0.5em;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid rgb(12, 16, 252);
+}
+
+#messages {
+    grid-column: 2/3;
+    width: 300px;
+}
+
+#likecall {
+    grid-column: 1/3;
+}
+
+#orderNumber {
+    display: none;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+    header h1 {
+        font-size: 5vw;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .motto {
+        font-size: 2vw;
+    }
+
+
+    h2 {
+        font-size: 3.5vw;
+    }
+
+    .menuItem {
+        font-size: 3.2vw;
+    }
+
+    .item span {
+        font-size: 3.2vw;
+    }
+
+    .item {
+        width: auto;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper h2 {
+        grid-template-columns: 1fr;
+    }
+
+    #form {
+        width: 95%;
+    }
+    .rotate90 {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    
+}
+
+@media only screen and (max-width: 1500px){
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #form form {
+        display: flex;
+        flex-direction: column;
+        min-width: 270px;
+        margin-left: 15px;
+    }
+}
